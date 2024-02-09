@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "466253130150",
+    "firebase_url": "https://kangleiphotographers-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "kangleiphotographers",
+    "storage_bucket": "kangleiphotographers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466253130150:android:e16ddb1c871dd299f90767",
+        "android_client_info": {
+          "package_name": "com.example.kangleiphotographers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466253130150-3k95qh6gm9962mriq1o324ihul2dsr8t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kangleiphotographers",
+            "certificate_hash": "5ac810ec4d61b515b60ef22b049acfba188dfe4d"
+          }
+        },
+        {
+          "client_id": "466253130150-t13ngiadfm4caq5u16ahal51ieubcels.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZJKo2F_1Bhktm4PBp3obfvhLmieYCZZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466253130150-t13ngiadfm4caq5u16ahal51ieubcels.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
