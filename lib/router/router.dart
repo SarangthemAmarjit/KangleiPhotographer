@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:kangleiphotographers/Authflow/auth_flow.dart';
+import 'package:kangleiphotographers/pages/categorypage.dart';
 import 'package:kangleiphotographers/pages/createaccount.dart';
 import 'package:kangleiphotographers/pages/dashboard.dart';
 import 'package:kangleiphotographers/pages/loadingpage.dart';
@@ -25,7 +26,8 @@ class AppRouter extends _$AppRouter {
         AutoRoute(page: LoginRoute.page, path: '/loginpage'),
         AutoRoute(page: CreateAccountRoute.page, path: '/createaccountpage'),
         AutoRoute(page: LoadingRoute.page, path: '/loadingpage'),
-        AutoRoute(page: HomeRoute.page, path: '/homepage')
+        AutoRoute(page: HomeRoute.page, path: '/homepage'),
+        AutoRoute(page: CategoryRoute.page, path: '/categorypage')
 
         /// routes go here
       ];

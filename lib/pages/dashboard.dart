@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import 'package:kangleiphotographers/constant/customapi.dart';
 
 import 'package:kangleiphotographers/controller/tapcontroller.dart';
+import 'package:kangleiphotographers/pages/categorypage.dart';
+import 'package:kangleiphotographers/router/router.dart';
 
 @RoutePage()
 class HomePage extends StatelessWidget {
@@ -108,7 +110,12 @@ class HomePage extends StatelessWidget {
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                         TextButton(
-                            onPressed: () {}, child: const Text('View All'))
+                            onPressed: () {
+                             Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const CategoryPage()),
+  );
+                            }, child: const Text('View All'))
                       ],
                     ),
                     const SizedBox(

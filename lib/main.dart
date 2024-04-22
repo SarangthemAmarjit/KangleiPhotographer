@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:kangleiphotographers/firebase_options.dart';
 import 'package:kangleiphotographers/pages/dashboard.dart';
+import 'package:kangleiphotographers/pages/navigationpage.dart';
 
 import 'router/router.dart';
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           fontFamily: 'KulimPark'),
-      builder: EasyLoading.init(), home: const HomePage(),
+      builder: EasyLoading.init(), home: const NavbarPage(),
     );
   }
 }

@@ -21,6 +21,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const AuthFlowPage(),
       );
     },
+    CategoryRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const CategoryPage(),
+      );
+    },
     CreateAccountRoute.name: (routeData) {
       final args = routeData.argsAs<CreateAccountRouteArgs>(
           orElse: () => const CreateAccountRouteArgs());
@@ -60,6 +66,20 @@ class AuthFlowRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'AuthFlowRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [CategoryPage]
+class CategoryRoute extends PageRouteInfo<void> {
+  const CategoryRoute({List<PageRouteInfo>? children})
+      : super(
+          CategoryRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CategoryRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }
