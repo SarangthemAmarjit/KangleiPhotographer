@@ -44,12 +44,12 @@ class _MyHomePageState extends State<NavbarPage> {
               canvasColor: const Color.fromARGB(255, 16, 24, 40),
               // sets the active color of the `BottomNavigationBar` if `Brightness` is light
             ), // sets the inactive color of the `BottomNavigat
-            child: SizedBox(
+            child: Container(margin: const EdgeInsets.only(bottom: 10),
                 height: 70,
                 child: Wrap(
                   children: [
-                    BottomNavigationBar(
-                      enableFeedback: true,
+                    BottomNavigationBar(type: BottomNavigationBarType.fixed,selectedIconTheme: const IconThemeData(size: 30,),
+
                       showUnselectedLabels: true,
                       selectedLabelStyle: const TextStyle(color: Colors.white),
                       selectedFontSize: 12,
@@ -74,7 +74,7 @@ class _MyHomePageState extends State<NavbarPage> {
                           label: 'My Booking',
                         ),
                         BottomNavigationBarItem(
-                          icon: CircleAvatar(
+                          icon: CircleAvatar(backgroundColor: Colors.white,
                             radius: 30,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -88,21 +88,21 @@ class _MyHomePageState extends State<NavbarPage> {
                         ),
                         BottomNavigationBarItem(
                           icon: Icon(
-                            Icons.business,
+                           FontAwesomeIcons.briefcase,
                             color: Colors.white,
                           ),
                           label: 'Portolio',
                         ),
                         BottomNavigationBarItem(
                           icon: Icon(
-                            Icons.school,
+                             FontAwesomeIcons.user,
                             color: Colors.white,
                           ),
                           label: 'Profile',
                         ),
                       ],
                       currentIndex: _selectedIndex,
-                      selectedItemColor: Colors.blue,
+                      selectedItemColor: const Color.fromARGB(255, 234, 251, 105),useLegacyColorScheme: true,
                       unselectedItemColor: Colors.white,
                       onTap: _onItemTapped,
                     ),
