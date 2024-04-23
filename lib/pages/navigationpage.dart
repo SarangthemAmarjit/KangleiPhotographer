@@ -37,7 +37,7 @@ class _MyHomePageState extends State<NavbarPage> {
       floatingActionButton: Padding(
         padding: const EdgeInsets.only(left: 30),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(20),
           child: Theme(
             data: Theme.of(context).copyWith(
               // sets the background color of the `BottomNavigationBar`
